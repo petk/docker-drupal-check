@@ -29,24 +29,6 @@ while test $# -gt 0; do
     exit 0
   else
     command=$1
-
-    # First argument after command.
-    if test "$2"; then
-      shift
-      argument_1=$1
-    fi
-
-    # Second argument after command.
-    if test "$2"; then
-      shift
-      argument_2=$1
-    fi
-
-    # Third argument (and the rest) after command.
-    if test "$2"; then
-      shift
-      argument_3=$@
-    fi
   fi
 
   shift
@@ -54,7 +36,7 @@ done
 
 case "$command" in
   build)
-    docker build --pull --no-cache -t drupal-check -f Dockerfile .
+    docker build --pull --no-cache -t petk/drupal-check:latest -f Dockerfile .
 
     ;;
   *)

@@ -1,0 +1,13 @@
+{
+    "require": {
+        "mglaman/drupal-check": "^1.1",
+        "cweagans/composer-patches": "^1.7"
+    },
+    "extra": {
+        "patches": {
+            "mglaman/drupal-check": {
+                "Fix ignore all errors": "https://github.com/mglaman/drupal-check/pull/191.patch"
+            }
+        }
+    }
+}

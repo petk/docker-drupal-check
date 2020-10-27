@@ -6,7 +6,7 @@ tool.
 ## Usage
 
 ```sh
-docker run -it --rm -v "$PWD":/app drupal-check docroot/modules/custom
+docker run -it --rm -v "$PWD":/app petk/drupal-check docroot/modules/custom
 ```
 
 ## Building Docker image
