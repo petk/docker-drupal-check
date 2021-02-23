@@ -1,7 +1,9 @@
 {
+    "name": "petk/docker-drupal-check",
     "require": {
         "mglaman/drupal-check": "^1.1",
-        "cweagans/composer-patches": "^1.7"
+        "cweagans/composer-patches": "^1.7",
+        "drupal/core-dev": "^8.9"
     },
     "extra": {
         "patches": {
